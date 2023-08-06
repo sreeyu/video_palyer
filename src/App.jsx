@@ -1,5 +1,6 @@
 import React from "react";
 import Menu from "./component/Menu";
+import Video from "./component/Video";
 
 const videos = {
   deer:
@@ -20,6 +21,7 @@ function App() {
     <div className="App">
     <h1>Video Player</h1>
     <Menu options={videoNames} />
+    <Video />
     </div>
   );
 }
