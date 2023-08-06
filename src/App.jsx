@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import Menu from "./component/Menu";
 import Video from "./component/Video";
 
@@ -16,11 +16,20 @@ const videos = {
 const videoNames = Object.keys(videos);
 
 function App() {
+
+  const [videoSrc, setVideoSrc] = useState("https://s3.amazonaws.com/codecademy-content/courses/React/react_video-cute.mp4")
+
+  const selectedOption = (option) => {
+    setVideoSrc(videos[option])
+  }
+
+  console.log(videoSrc);
+
   
   return (
     <div className="App">
     <h1>Video Player</h1>
-    <Menu options={videoNames} />
+    <Menu options={videoNames} onSelect={selectedOption} />
     <Video />
     </div>
   );
