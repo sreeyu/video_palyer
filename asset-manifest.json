@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/video_player/static/css/main.1950aab5.css",
+    "main.js": "/video_player/static/js/main.d2a17fd8.js",
+    "index.html": "/video_player/index.html",
+    "main.1950aab5.css.map": "/video_player/static/css/main.1950aab5.css.map",
+    "main.d2a17fd8.js.map": "/video_player/static/js/main.d2a17fd8.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.1950aab5.css",
+    "static/js/main.d2a17fd8.js"
+  ]
+}
