@@ -3,7 +3,7 @@ import styles from './Menu.module.css';
 
 function Menu(props){
 
-    const [selectedOption, setSelectedOption] = useState(null);
+    const [selectedOption, setSelectedOption] = useState("cat");
 
     const getOption = (event) =>{
         setSelectedOption(event.target.id);
@@ -14,8 +14,8 @@ function Menu(props){
         <div className={styles.container}>
            {props.options.map((option) => 
            <div key={option} className={styles.options} >
-            <input type="radio" id={option} onChange={getOption} checked={selectedOption === option} /> 
-            <label id={option} >{option}</label>
+            <input type="radio" id={option} onChange={getOption} checked={selectedOption === option} name="videoOption" /> 
+            <label htmlFor={option} >{option}</label>
             </div>
             )} 
         </div>
